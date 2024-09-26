@@ -24,7 +24,7 @@ const UserLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const response = await axios.post("https://food-recipe-website-uy9h.onrender.com/api/auth/login", formData);
 
       if (response.status === 200) {
         toast.success("Login successful! Redirecting to recipes...");

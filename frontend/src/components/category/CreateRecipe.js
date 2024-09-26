@@ -35,7 +35,7 @@ const CreateRecipe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/recipes", recipeData);
+      const response = await axios.post("https://food-recipe-website-uy9h.onrender.com/api/recipes", recipeData);
       console.log("Recipe created successfully:", response.data);
       toast.success("Recipe created successfully!");
       setRecipeData({
