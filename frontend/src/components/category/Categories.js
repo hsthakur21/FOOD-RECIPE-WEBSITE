@@ -11,7 +11,7 @@ const Categories = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/recipes/categories');
+                const response = await axios.get('https://food-recipe-website-uy9h.onrender.com/api/recipes/categories');
                 console.log("Fetched Categories:", response.data);
                 setCategories(response.data);
             } catch (error) {
