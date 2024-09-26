@@ -15,7 +15,7 @@ const RecipesList = () => {
         const fetchRecipes = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`http://localhost:5000/api/recipes/categories/${categoryId}/recipes`);
+                const response = await axios.get(`https://food-recipe-website-uy9h.onrender.com/api/recipes/categories/${categoryId}/recipes`);
                 setRecipes(response.data);
             } catch (error) {
                 console.error("Error fetching recipes:", error);
