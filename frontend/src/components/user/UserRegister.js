@@ -25,7 +25,7 @@ const UserRegister = () => {
 
     try {
       // Make a POST request to the signup API
-      const response = await axios.post("http://localhost:5000/api/auth/register", formData); 
+      const response = await axios.post("https://food-recipe-website-uy9h.onrender.com/api/auth/register", formData); 
 
       if (response.status === 201) {
         
